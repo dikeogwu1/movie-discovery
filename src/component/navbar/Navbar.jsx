@@ -1,4 +1,4 @@
-import "../../syles/navbar/navbar.css";
+import "../../syles/navbar.css";
 import TV from "../../assets/tv.png";
 import Search from "../svg/Search";
 import Hamburger from "../svg/Hamburger";

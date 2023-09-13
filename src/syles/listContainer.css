@@ -1,0 +1,30 @@
+.listContainer {
+  margin-top: 2.75rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+  min-height: 25rem;
+}
+.center {
+  display: grid;
+  place-content: center;
+  min-height: 25rem;
+}
+
+@media screen and (min-width: 600px) {
+  .listContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 3rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .listContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .listContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

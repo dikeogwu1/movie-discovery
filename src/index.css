@@ -17,6 +17,7 @@
   --primary-rose: #be123c;
   --primary-pink: rgba(190, 18, 60, 0.1);
   --primary-grey: #d1d5db;
+  --gray-900: #111827;
   /* secondary colors */
   --secondary-gray: #111827;
   --secondary-rose: hsl(345, 83%, 70%);
@@ -114,6 +115,25 @@ input[type="text"]:hover,
 .container-fluid {
   max-width: 1200px;
 }
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--primary-grey);
+  border-radius: 50%;
+  border-top-color: var(--primary-rose);
+  animation: spinner 2s linear infinite;
+}
+.loading-center {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 900px) {
   .container {
     padding: 0.94rem 3.12rem;

@@ -1,6 +1,6 @@
 import ArrowLeft from "../../svg/ArrowLeft";
-import "../../../syles/movieList/movieList.css";
-import Movie from "./Movie";
+import "../../../syles/movieList.css";
+import ListContainer from "./ListContainer";
 
 function MovieList() {
   return (
@@ -11,9 +11,8 @@ function MovieList() {
           see more <ArrowLeft />
         </button>
       </header>
-      <div className='movieList_box'>
-        <Movie />
-      </div>
+
+      <ListContainer />
     </main>
   );
 }
