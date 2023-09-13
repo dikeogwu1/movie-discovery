@@ -1,0 +1,67 @@
+.hero {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../../assets/Poster.svg"), lightgray 50% / cover no-repeat;
+  height: 37.5rem;
+  color: var(--primary-white);
+}
+.hero_content {
+  margin-top: 5.81rem;
+}
+.hero_descriptionBox {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 23.3rem;
+}
+.hero_title {
+  color: var(--primary-white);
+}
+.hero_ratingBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.hero_subImg img {
+  margin-right: 0.5rem;
+}
+.hero_btn {
+  display: flex;
+  padding: 0.375rem 1rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.375rem;
+  background: var(--primary-rose);
+  font-family: var(--primary-font);
+}
+.hero_btnText {
+  color: var(--primary-white);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+.hero_numbers {
+  display: none;
+  width: fit-content;
+}
+.hero_numbers h4 {
+  color: var(--primary-white);
+}
+
+@media screen and (min-width: 600px) {
+  .hero_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero_numbers {
+    display: block;
+  }
+}

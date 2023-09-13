@@ -1,0 +1,27 @@
+.movieList {
+  padding-top: 4.38rem;
+}
+.movieList_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.movieList_header button {
+  background: transparent;
+  color: var(--primary-rose);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: var(--primary-radius);
+  padding: 0.1rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.movieList_header h2 {
+  color: var(--primary-black);
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.movieList_box {
+  margin-top: 2.75rem;
+}
