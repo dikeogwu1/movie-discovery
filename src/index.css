@@ -17,9 +17,9 @@
   --primary-rose: #be123c;
   --primary-pink: rgba(190, 18, 60, 0.1);
   --primary-grey: #d1d5db;
-  --gray-900: #111827;
+  --gray-500: #6b7280;
   /* secondary colors */
-  --secondary-gray: #111827;
+  --grey-900: #111827;
   --secondary-rose: hsl(345, 83%, 70%);
   /* lighter shade */
   --lighter-gray: #9ca3af;

@@ -1,14 +1,15 @@
-import useFetch from "../../../utils/useFetch";
-import Loading from "../../Loading";
-import "../../../syles/listContainer.css";
+import useFetch from "../../utils/useFetch";
+import Loading from "../Loading";
+import "../../syles/moviesContainer.css";
 import Card from "./Card";
 
 const url =
   "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1";
 
-function ListContainer() {
+function MoviesContainer() {
   const { loading, data, error } = useFetch(url);
   data.splice(10, 19);
+
   // loading state
   if (loading) {
     return (
@@ -35,4 +36,4 @@ function ListContainer() {
     </div>
   );
 }
-export default ListContainer;
+export default MoviesContainer;

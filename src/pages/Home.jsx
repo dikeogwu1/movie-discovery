@@ -1,11 +1,11 @@
-import Footer from "../component/features/footer/Footer";
-import Hero from "../component/features/hero/Hero";
-import MovieList from "../component/features/movieList/MovieList";
+import Footer from "../component/footer/Footer";
+import Hero from "../component/hero/Hero";
+import Featured from "../component/movieList/Featured";
 function Home() {
   return (
     <>
       <Hero />
-      <MovieList />
+      <Featured />
       <Footer />
     </>
   );

@@ -1,6 +1,6 @@
-import "../../../syles/card.css";
-import MDB from "../../../assets/MDB.png";
-import ROSE from "../../../assets/Rose_fruit.png";
+import "../../syles/card.css";
+import MDB from "../../assets/MDB.png";
+import ROSE from "../../assets/Rose_fruit.png";
 
 function Card({ poster_path, vote_average, vote_count, title, release_date }) {
   const votePercentage = Math.floor((vote_average / 10) * 100);

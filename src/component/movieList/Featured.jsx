@@ -1,8 +1,8 @@
-import ArrowLeft from "../../svg/ArrowLeft";
-import "../../../syles/movieList.css";
-import ListContainer from "./ListContainer";
+import ArrowLeft from "../svg/ArrowLeft";
+import "../../syles/featured.css";
+import MoviesContainer from "./MoviesContainer";
 
-function MovieList() {
+function Featured() {
   return (
     <main className='movieList container'>
       <header className='movieList_header'>
@@ -12,9 +12,9 @@ function MovieList() {
         </button>
       </header>
 
-      <ListContainer />
+      <MoviesContainer />
     </main>
   );
 }
 
-export default MovieList;
+export default Featured;

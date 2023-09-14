@@ -1,8 +1,8 @@
-import "../../../syles/hero.css";
-import Navbar from "../../navbar/navbar";
-import MDB from "../../../assets/MDB.png";
-import ROSE from "../../../assets/rose_fruit.png";
-import PLAY from "../../../assets/play.svg";
+import "../../syles/hero.css";
+import Navbar from "../navbar/navbar";
+import MDB from "../../assets/MDB.png";
+import ROSE from "../../assets/rose_fruit.png";
+import PLAY from "../../assets/play.svg";
 
 function Hero() {
   return (
