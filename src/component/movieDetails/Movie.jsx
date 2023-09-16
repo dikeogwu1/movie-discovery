@@ -3,11 +3,12 @@ import useFetch from "../../utils/useFetch";
 import Loading from "../Loading";
 import Description from "./descriptions";
 
+const key = "6b87cc14ea4c288700673a1053ad4fb6";
+
 function Movie({ id }) {
-  const url = `https://api.themoviedb.org/3/movie/${id}?language=en-US`;
+  const url = `https://api.themoviedb.org/3/movie/${id}?append_to_response=videos,credits`;
 
   const { loading, data, error } = useFetch(url);
-  // console.log(data);
 
   if (loading) {
     return (
@@ -37,17 +38,11 @@ function Movie({ id }) {
     <div className='movieDetails'>
       {/* movie poster */}
       <figure className='movieDetails_poster'>
-        <div className='movieDetails_play'>
-          <img
-            src='https://res.cloudinary.com/dikeogwu1/image/upload/v1694692107/Icons/Play_fg7qwu.png'
-            alt='play button'
-          />
-        </div>
-        <img
-          src={`https://image.tmdb.org/t/p/original/${data.poster_path}`}
-          alt={data.title}
+        <iframe
+          src={`https://www.themoviedb.org/video/play?key=${data.videos.results[0].key}`}
           data-testid='movie-poster'
-        />
+          allowfullscreen
+        ></iframe>
       </figure>
       {/* contents below movie poster */}
       <section className='movieDetails_content'>

@@ -7,13 +7,16 @@
 }
 .description_item1 {
   display: grid;
-  gap: 1.09rem;
+  gap: 1.79rem;
 }
 .description_item1 p {
   margin: 0;
 }
 .descrition_overview {
   margin-top: 0.75rem;
+}
+.description_makers {
+  color: var(--secondary-rose);
 }
 .description_bottomBtn {
   width: 15.8125rem;

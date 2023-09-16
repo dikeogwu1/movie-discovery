@@ -1,16 +1,29 @@
 import "../../syles/descriptions.css";
 import ThreeInOne from "../../assets/ThreeInOne.png";
 
-function Description({ overview, params }) {
+function Description({ overview, credits, params }) {
   return (
     <article className='description'>
       <div className='description_item1'>
         <p className='descrition_overview' data-testid='movie-overview'>
           {overview}
         </p>
-        <p>Director:</p>
-        <p>winters:</p>
-        <p>stars:</p>
+        <p>
+          Director:{" "}
+          <span className='description_makers'>{credits.crew[3].name}</span>
+        </p>
+        <p>
+          writers:{" "}
+          <span className='description_makers'>
+            {credits.crew[4].name}, {credits.crew[5].name}
+          </span>
+        </p>
+        <p>
+          stars:{" "}
+          <span className='description_makers'>
+            {credits.cast[0].name}, {credits.cast[1].name}
+          </span>
+        </p>
         <div className='description_bottomBtn'>
           <button>
             <span>Top rated movie #65</span>
