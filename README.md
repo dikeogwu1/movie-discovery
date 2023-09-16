@@ -2,7 +2,7 @@
 
 ### HNGx stage 2 task
 
-A movie discovery app, hosted on Netlify. [Live demo](https://www.movie-discovery-fabian){:target="\_blank"}
+A movie discovery app, hosted on Netlify. [Live demo](https://www.movie-discovery-fabian)
 
 In order to run this app locally, follow the steps below.
 
