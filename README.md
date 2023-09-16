@@ -1,8 +1,22 @@
-# React + Vite
+# MDB Movie Discovery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### HNGx stage 2 task
 
-Currently, two official plugins are available:
+A movie discovery app, hosted on Netlify.
+(https://www.movie-discovery-fabian)[Live]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In order to run this app locally, follow the steps below.
+
+```
+"Install dependencies": "npm install",
+"start the dev server": "npm run dev"
+
+```
+
+### `Note`
+
+before you can access the movies that will be returned by the MDB api, you must create "`.env` file" in the root folder, then put in your MDB authorization token exactly as show below.
+
+```
+"VITE_REACT_APP_ACCESS_TOKEN=":"your acces token goes in here"
+```
