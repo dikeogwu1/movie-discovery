@@ -5,7 +5,9 @@ function Description({ overview, params }) {
   return (
     <article className='description'>
       <div className='description_item1'>
-        <p className='descrition_overview'>{overview}</p>
+        <p className='descrition_overview' data-testid='movie-overview'>
+          {overview}
+        </p>
         <p>Director:</p>
         <p>winters:</p>
         <p>stars:</p>

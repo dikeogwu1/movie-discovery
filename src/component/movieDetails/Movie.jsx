@@ -55,9 +55,11 @@ function Movie({ id }) {
           <div className='movieDetails_item1'>
             {/* movie name, release date and runtime */}
             <div className='movieDetails_name'>
-              <strong>{data.title} .</strong>
-              <strong>{new Date(data.release_date).getFullYear()} .</strong>
-              <strong>{formattedRuntime}</strong>
+              <strong data-testid='movie-title'>{data.title} .</strong>
+              <strong data-testid='movie-release-date'>
+                {new Date(data.release_date).getFullYear()} .
+              </strong>
+              <strong data-testid='movie-runtime'>{formattedRuntime}</strong>
             </div>
             {/* movie genres */}
             <div className='movieDetails_genres'>
