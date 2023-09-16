@@ -1,0 +1,111 @@
+.movieDetails_loading {
+  margin-top: 2.38rem;
+  display: grid;
+  place-content: center;
+  min-height: 12rem;
+}
+.movieDetails {
+  margin-top: 2.38rem;
+  width: 90vw;
+}
+.movieDetails_poster {
+  width: 100%;
+  height: 28.0625rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  position: relative;
+}
+.movieDetails_play {
+  position: absolute;
+  z-index: 3;
+  object-fit: contain;
+  width: 6.875rem;
+  height: 6.875rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  border: 2px solid rgba(232, 232, 232, 0.2);
+  display: grid;
+  place-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.movieDetails_play img {
+  width: 3.375rem;
+  height: 3.375rem;
+}
+.movieDetails_poster img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+}
+.movieDetails_poster::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #d3d3d34d 50% / cover no-repeat;
+}
+.movieDetails_content {
+  margin-top: 1.94rem;
+}
+.movieDetails_header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2.12rem;
+}
+.movieDetails_item1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.12rem;
+  flex-wrap: wrap;
+}
+.movieDetails_name {
+  display: flex;
+  gap: 1rem;
+}
+.movieDetails_genres {
+  display: flex;
+  gap: 2.75rem;
+}
+.movieDetails_genres strong {
+  color: var(--primary-red);
+  font-family: var(--secondary-font);
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+.movieDetails_favorite {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+.movieDetails_favorite img {
+  transition: var(--main-transition);
+}
+.movieDetails_favorite img:hover {
+  transform: scale(0.8);
+}
+.movieDetails_average {
+  color: var(--lighter-grey);
+}
+.movieDetails_body {
+  margin-top: 1.56rem;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .movieDetails {
+    width: 100%;
+  }
+  .movieDetails_poster {
+    width: inherit;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .movieDetails_header {
+    flex-direction: row;
+  }
+}

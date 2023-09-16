@@ -1,0 +1,107 @@
+.description {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.31rem;
+  width: 100%;
+}
+.description_item1 {
+  display: grid;
+  gap: 1.09rem;
+}
+.description_item1 p {
+  margin: 0;
+}
+.descrition_overview {
+  margin-top: 0.75rem;
+}
+.description_bottomBtn {
+  width: 15.8125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0.625rem;
+  border: 1px solid #c7c7c7;
+  background: var(--secondary-white);
+  /* gap: 0.25rem; */
+}
+.description_bottomBtn button,
+.description_bottomBtn span,
+.description_item1 p {
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: var(--secondary-font);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.description_item1 p {
+  font-weight: 400;
+}
+.description_bottomBtn button {
+  width: 15.8125rem;
+  height: 3.4375rem;
+  border-radius: 0.625rem;
+  background: var(--primary-rose);
+  text-align: center;
+}
+.description_bottomBtn span {
+  color: var(--secondary-black);
+}
+/* item 2 */
+.description_item2 {
+  display: grid;
+  gap: 2.06rem;
+  overflow: hidden;
+}
+.description_btnBox {
+  display: grid;
+  gap: 0.75rem;
+}
+.description_largeBtn1,
+.description_largeBtn2 {
+  width: 19.5rem;
+  height: 3.4375rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: var(--primary-rose);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.63rem;
+}
+.description_largeBtn1 span,
+.description_largeBtn2 span {
+  color: #fff;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: var(--secondary-font);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.description_largeBtn2 {
+  background: var(--secondary-rose);
+  border: 1px solid var(--primary-rose);
+  background: var(--lighter-rose);
+}
+.description_largeBtn2 span {
+  color: var(--primary-black);
+}
+
+@media screen and (min-width: 900px) {
+  .description {
+    flex-direction: row;
+  }
+  .description_item2 {
+    overflow: visible;
+  }
+  .description_largeBtn1,
+  .description_largeBtn2 {
+    width: 22.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description_bottomBtn {
+    width: 100%;
+    height: 3.4375rem;
+    padding-right: 0.75rem;
+  }
+}

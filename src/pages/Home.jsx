@@ -1,4 +1,3 @@
-import Footer from "../component/footer/Footer";
 import Hero from "../component/hero/Hero";
 import Featured from "../component/movieList/Featured";
 function Home() {
@@ -6,7 +5,6 @@ function Home() {
     <>
       <Hero />
       <Featured />
-      <Footer />
     </>
   );
 }

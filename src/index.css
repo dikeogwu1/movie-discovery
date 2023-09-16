@@ -1,5 +1,5 @@
 /***** Fonts ****/
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Poppins&display=swap");
 
 /********* Reset some default browser styles ********/
 *,
@@ -17,16 +17,22 @@
   --primary-rose: #be123c;
   --primary-pink: rgba(190, 18, 60, 0.1);
   --primary-grey: #d1d5db;
+  --primary-red: #b91c1c;
   --gray-500: #6b7280;
   /* secondary colors */
   --grey-900: #111827;
   --secondary-rose: hsl(345, 83%, 70%);
+  --secondary-black: #333;
+  --secondary-white: rgba(255, 255, 255, 0.8);
   /* lighter shade */
-  --lighter-gray: #9ca3af;
+  --lighter-grey: #9ca3af;
+  --lighter-black: #666;
+  --lighter-rose: rgba(190, 18, 60, 0.1);
   /* border radius */
   --primary-radius: 0.25rem;
   /* fonts */
   --primary-font: "DM Sans", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
   /* transition */
   --main-transition: 0.3s all linear;
   /* shadow */
@@ -74,13 +80,12 @@ p {
   font-weight: 500;
 }
 
-a {
+.link {
   text-decoration: none;
-  color: #007bff;
+  color: var(--gray-900);
 }
-
-a:hover {
-  text-decoration: underline;
+.link:hover {
+  text-decoration: none;
 }
 
 /* Create a basic button style */

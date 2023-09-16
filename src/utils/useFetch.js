@@ -18,10 +18,15 @@ function useFetch(url) {
       const res = await axios.get(url, {
         headers: {
           Accept: "application/json",
-          Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2Yjg3Y2MxNGVhNGMyODg3MDA2NzNhMTA1M2FkNGZiNiIsInN1YiI6IjY0ZmVlMWZlZTBjYTdmMDEwZGU5NjMzNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.urHDSXIQZ9f8h2Ff7lF8RmzAmwTlLMEJOa64yj0C_Lw`,
+          Authorization: `Bearer ${
+            import.meta.env.VITE_REACT_APP_ACCESS_TOKEN
+          }`,
         },
       });
-      dispatch({ type: ACTIONS.FETCH_DATA, payload: res.data.results });
+      dispatch({
+        type: ACTIONS.FETCH_DATA,
+        payload: res.data.results ? res.data.results : res.data,
+      });
     } catch (error) {
       dispatch({ type: ACTIONS.ERROR, payload: error.message });
     }
