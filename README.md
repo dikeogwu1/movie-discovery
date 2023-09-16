@@ -1,6 +1,6 @@
 # MDB Movie Discovery
 
-A movie discovery app, hosted on Netlify. [Live demo](https://www.movie-discovery-fabian)
+A movie discovery app, hosted on Netlify. [Live demo](https://www.movie-discovery-fabian.nelify.app)
 
 In order to run this app locally, follow the steps below.
 
